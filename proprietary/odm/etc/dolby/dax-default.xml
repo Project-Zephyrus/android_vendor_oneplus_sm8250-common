@@ -1128,7 +1128,7 @@
         <band_regulator frequency="13875" threshold_low="-192" threshold_high="0" isolated_band="false"/>
         <band_regulator frequency="19688" threshold_low="-192" threshold_high="0" isolated_band="false"/>
       </regulator-tuning>
-      <regulator-sibilance-suppress-amounts-left value="-153,-265,-254,-175,0,-149"/>
+      <regulator-sibilance-suppress-amounts-left value="0,-222,-291,-291,-375,-375"/>
       <regulator-sibilance-suppress-amounts-right value="-193,-259,-149,0,0,-175"/>
       <bass-enhancer-boost value="59"/>
       <bass-enhancer-cutoff-frequency value="399"/>
@@ -1224,7 +1224,7 @@
         <band_regulator frequency="13875" threshold_low="-192" threshold_high="0" isolated_band="false"/>
         <band_regulator frequency="19688" threshold_low="-192" threshold_high="0" isolated_band="false"/>
       </regulator-tuning>
-      <regulator-sibilance-suppress-amounts-left value="-153,-265,-254,-175,0,-149"/>
+      <regulator-sibilance-suppress-amounts-left value="0,-222,-291,-291,-375,-375"/>
       <regulator-sibilance-suppress-amounts-right value="-193,-259,-149,0,0,-175"/>
       <bass-enhancer-boost value="59"/>
       <bass-enhancer-cutoff-frequency value="399"/>
