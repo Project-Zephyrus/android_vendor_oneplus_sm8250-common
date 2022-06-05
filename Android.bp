@@ -46,6 +46,17 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
+	name: "QualcommVoiceActivation",
+	owner: "oneplus",
+	apk: "proprietary/system/priv-app/QualcommVoiceActivation/QualcommVoiceActivation.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "CneApp",
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
@@ -125,6 +136,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "imssettings",
+	owner: "oneplus",
+	apk: "proprietary/system_ext/app/imssettings/imssettings.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "DaxUI",
 	owner: "oneplus",
 	apk: "proprietary/system_ext/priv-app/DaxUI/DaxUI.apk",
@@ -133,17 +155,6 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "imssettings",
-	owner: "oneplus",
-	apk: "proprietary/system_ext/app/imssettings/imssettings.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
 	system_ext_specific: true,
 }
 
@@ -192,6 +203,40 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "tcmclient",
+	owner: "oneplus",
+	jars: ["proprietary/system/framework/tcmclient.jar"],
+}
+
+dex_import {
+	name: "com.android.hotwordenrollment.common.util",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qti.dpmframework",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "dpmapi",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qcrilhook",
+	owner: "oneplus",
+	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
 	system_ext_specific: true,
 }
 
