@@ -79,28 +79,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "com.oneplus.gpudrivers.kona.api30",
-	owner: "oneplus",
-	apk: "proprietary/vendor/app/com.oneplus.gpudrivers.kona.api30/com.oneplus.gpudrivers.kona.api30.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
-	name: "com.qualcomm.qti.gpudrivers.kona.api30",
-	owner: "oneplus",
-	apk: "proprietary/vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk",
-	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	soc_specific: true,
-}
-
-android_app_import {
 	name: "PowerOffAlarm",
 	owner: "oneplus",
 	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
@@ -136,17 +114,6 @@ android_app_import {
 }
 
 android_app_import {
-	name: "QtiTelephonyService",
-	owner: "oneplus",
-	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
 	name: "IFAAService",
 	owner: "oneplus",
 	apk: "proprietary/system_ext/priv-app/IFAAService/IFAAService.apk",
@@ -170,30 +137,6 @@ android_app_import {
 	system_ext_specific: true,
 }
 
-android_app_import {
-	name: "ims",
-	owner: "oneplus",
-	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "qcrilmsgtunnel",
-	owner: "oneplus",
-	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
 dex_import {
 	name: "WfdCommon",
 	owner: "oneplus",
@@ -207,36 +150,9 @@ dex_import {
 }
 
 dex_import {
-	name: "tcmclient",
-	owner: "oneplus",
-	jars: ["proprietary/system/framework/tcmclient.jar"],
-}
-
-dex_import {
 	name: "com.android.hotwordenrollment.common.util",
 	owner: "oneplus",
 	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "com.qti.dpmframework",
-	owner: "oneplus",
-	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "dpmapi",
-	owner: "oneplus",
-	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "qcrilhook",
-	owner: "oneplus",
-	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
 	system_ext_specific: true,
 }
 
