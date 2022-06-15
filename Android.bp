@@ -46,6 +46,17 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
+	name: "QualcommVoiceActivation",
+	owner: "oneplus",
+	apk: "proprietary/system/priv-app/QualcommVoiceActivation/QualcommVoiceActivation.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "CneApp",
 	owner: "oneplus",
 	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
@@ -140,7 +151,7 @@ android_app_import {
 	name: "IFAAService",
 	owner: "oneplus",
 	apk: "proprietary/system_ext/priv-app/IFAAService/IFAAService.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
